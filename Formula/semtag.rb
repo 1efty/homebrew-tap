@@ -1,9 +1,9 @@
 class Semtag < Formula
-  desc "Tag your repository according to Semantic Versioning."
+  desc "Tag your repository according to Semantic Versioning"
   homepage "https://github.com/1efty/semtag"
-  version "0.0.6"
-  url "https://github.com/1efty/semtag/archive/v0.0.6.tar.gz"
-  sha256 "95cee2c511fba421364ac0ca68816522cf6e8adc8e87b3090b8e460d93a1c92f"
+  url "https://github.com/1efty/semtag/releases/download/"
+  version "0.0.7"
+  sha256 "af14354098a47c9eef478ae19c76d4a792241501b410153fc7aab45d24bebce7"
   license "MIT"
   head "https://github.com/semtag/semtag.git"
 
@@ -12,7 +12,7 @@ class Semtag < Formula
     regex(%r{href=.*?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
-  depends_on "go@1.15" => :build
+  depends_on "go" => :build
 
   def install
     system "go", "build", *std_go_args, "-ldflags", "-s -w", "-mod=vendor"
