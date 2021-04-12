@@ -14,7 +14,7 @@ class Semtag < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args, "-ldflags", "-s -w", "-mod=vendor"
+    system "go", "build", *std_go_args, "-ldflags", "-s -w"
 
     (bash_completion/"semtag").write `#{bin}/semtag completion bash`
     (zsh_completion/"_semtag").write `#{bin}/semtag completion zsh`
