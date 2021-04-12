@@ -1,8 +1,8 @@
 class Semtag < Formula
   desc "Tag your repository according to Semantic Versioning"
   homepage "https://github.com/1efty/semtag"
-  url "https://github.com/1efty/semtag/archive/v0.0.7.tar.gz"
-  sha256 "af14354098a47c9eef478ae19c76d4a792241501b410153fc7aab45d24bebce7"
+  url "https://github.com/1efty/semtag/archive/v0.0.10.tar.gz"
+  sha256 "0660ed11c2ff858e1c1e1633a2b52ff42e82a30db995ac207b01c61ef94b0ce7"
   license "MIT"
   head "https://github.com/semtag/semtag.git"
 
